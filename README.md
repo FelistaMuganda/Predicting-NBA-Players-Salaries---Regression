@@ -9,7 +9,7 @@ AIC and BIC techniques were used for model reduction
 
 
 # Motivation
-The motivation for the project was evaluate which variables describing the player’s physique 
+The motivation for the project was to evaluate which variables describing the player’s physique 
 and game efficiency drive their salary. Our presumption was that a 
 strong positive correlation exists between points per game and salary. We also wanted to see 
 whether the kind of points made i.e. whether 3-pointers or 2-pointers, would have a different
@@ -68,7 +68,7 @@ correlation between the variables.
 3. Interprating the model
 
 # Conclusion
-In summary, a player earnings are significantly impacted mainly by his scoring ability (measured 
+In summary, a player earnings are mainly impacted by his scoring ability (measured 
 by points per game, effective field goals percentage, rebounds and the assists the player made 
 to help another player score) and declines with increasing personal fouls. Players who are 
 efficient scorers and low on fouls have a higher salary. Mid-range experience (4-16 years) is also 
