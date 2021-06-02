@@ -73,5 +73,4 @@ by points per game, effective field goals percentage, rebounds and the assists t
 to help another player score) and declines with increasing personal fouls. Players who are 
 efficient scorers and low on fouls have a higher salary. Mid-range experience (4-16 years) is also 
 the peak of increasing salary. After a certain number of years, experience does not add too
-much value to a player’s technique
-
+much value to a player’s salary, possibly because beyond a certain threshhold,more experience does not significantly improve their game.
