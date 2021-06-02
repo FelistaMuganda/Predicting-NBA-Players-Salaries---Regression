@@ -10,20 +10,19 @@ AIC and BIC techniques were used for model reduction
 
 # Motivation
 The motivation for the project was evaluate which variables describing the player’s physique 
-and game efficiency are most influential in determining their salary. Our presumption was that a 
+and game efficiency drive their salary. Our presumption was that a 
 strong positive correlation exists between points per game and salary. We also wanted to see 
 whether the kind of points made i.e. whether 3-pointers or 2-pointers, would have a different
 effect on the player’s salary. 
 
-Starting out with a linear regression, we expected a lot of the variables to be dropped, due to high 
-correlation between the variables. We were also eager to see the relationship between variables 
+We were also eager to see the relationship between variables 
 that measure the efficiency of a player such as their years of experience, with salary. Does their 
 salary increase at a decreasing rate with experience? i.e. is there a peak number of years of 
 experience after which the increase in experience does not translate to an increase in salary?
 We also wanted to test the old basketball ‘myth’ that height is key in the game, and so were 
 looking out to see if height got picked by the model as a significant regressor. It was not.
 
-# Introduction
+# Data
 We obtained NBA basketball data from https://www.basketball-reference.com/. This data was 
 split up into several tables, and we chose three to model the player’s salary. They are as 
 follows:
@@ -57,3 +56,22 @@ We then binned the player’s height, age, and experience. Heights were binned i
 intervals, age was binned into 3 year intervals and Experience into 3 bins: ‘0-3’ , ‘4-16’, ‘17-21’ 
 based on the similar coefficients observed between 0-3 years, 4-6 years’ experience, and 17-21 
 years.
+
+The notebook includes:
+1. Exploratory Data Analysis
+2. Modelling process :
+      . Base model - linear regression
+      . Variable selection using AIC and BIC methods - Starting out with a linear regression, we expected a lot of the variables to be dropped, due to high 
+correlation between the variables.
+      . Evaluation of whether the data fits a linear model using residual and Q-Q plots and RMSE
+      . Log transformation to better fit a linear regression
+3. Interprating the model
+
+# Conclusion
+In summary, a player earnings are significantly impacted mainly by his scoring ability (measured 
+by points per game, effective field goals percentage, rebounds and the assists the player made 
+to help another player score) and declines with increasing personal fouls. Players who are 
+efficient scorers and low on fouls have a higher salary. Mid-range experience (4-16 years) is also 
+the peak of increasing salary. After a certain number of years, experience does not add too
+much value to a player’s technique
+
