@@ -48,7 +48,7 @@ per game
 # Modelling Process
 
 # Data Preparation
-The data was scraped from the website with the assistance of Scott. It was then joined using 
+The data was scraped from the website. It was then joined using 
 SQLDF. Since the Roster table entries were less than those in per game, we did an inner join 
 with the Roster table and game table to get only the variables in both tables. We then did a left 
 join on the Salaries table as the base table with this joined table.
